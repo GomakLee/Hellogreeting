@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from firstpageapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', name='firstpage', views.home), # 제일 먼저 보여지는 페이지에 대한 url
+    path(''),
 ]
