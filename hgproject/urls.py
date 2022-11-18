@@ -20,5 +20,7 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='firstpage'), # 제일 먼저 보여지는 페이지에 대한 url
-    path('secondpage/',views.writtingbutton, name='secondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
+    path('secondpage',views.gotosecondpage, name='secondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
+    #path('secondpage/<int:post_id>',views.writtingbutton, name='secondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
+
 ]
