@@ -11,7 +11,7 @@ def home(request):
 #     return render(request, "secondpage_base.html",{'post_detail':post_detail})
 
 def gotosecondpage(request):
-    return render(request, "secondpage_base.html")
+    return render(request, "Christmas.html")
 
 
 def gotothirdpage(request):
