@@ -7,4 +7,4 @@ def home(request):
 # 첫페이지의 <인사하러 가기> 버튼을 눌렀을 때 실행되는 함수
 # 버튼 클릭 -> 2페이지로 가기
 def writingbutton(request):
-    return render()
+    return render(request, "secondpage.html")
