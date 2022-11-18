@@ -20,7 +20,16 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='firstpage'), # 제일 먼저 보여지는 페이지에 대한 url
+<<<<<<< Updated upstream
     path('secondpage',views.gotosecondpage, name='secondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
     #path('secondpage/<int:post_id>',views.writtingbutton, name='secondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
 
+=======
+    path('secondpage_base/',views.gotosecondpage, name='gotosecondpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
+
+    path('secondpage_1/',views.secondpage, name='secondpage'),
+    path('secondpage_2/',views.secondpage, name='secondpage'),
+    path('secondpage_3/',views.secondpage, name='secondpage'),
+    path('thirdpage/', views.gotothirdpage, name='gotothirdpage'),
+>>>>>>> Stashed changes
 ]
