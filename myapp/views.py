@@ -44,4 +44,7 @@ def secondpage(request,post_id):
     return render(request, "secondpage_base.html",{'post_detail':post_detail})
 
 def thirdpage(request):
+    #작성한 이름이 데이터 베이스에 저장되는 기능
+    filled_form = 
+    
     return render(request, 'thirdpage.html')
