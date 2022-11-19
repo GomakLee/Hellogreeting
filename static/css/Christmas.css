@@ -138,7 +138,7 @@
 #messageList{
     margin: auto;
     width: 90%;
-    height: 65%;
+    height: 58%;
     text-align: center;
     background-color: white;
 }
@@ -158,4 +158,20 @@ html{
     height: 100%;
     background:linear-gradient(#fdfdfe, rgb(201, 228, 214), #77bc96);
 
+}
+#nextBtnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top:2%;
+}
+
+#nextBtn{
+    text-align: center;
+    background-color: rgba(0, 135, 62, 1);
+    color: white;
+    border-radius: 8px;
+    width:20%;
+    font-size: 22px;
+    border:0;
+    outline:0;
 }
