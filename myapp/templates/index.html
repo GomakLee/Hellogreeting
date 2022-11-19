@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      user-scalable="no"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+    </style>
+    <title>Hello Greeting</title>
+  </head>
+
+  <body>
+    <div id="body_wrap">
+      <header>
+        <div id="hello_greeting_logo">
+          {%url 'index' %}
+          <h1 class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="logo" />
+          </h1>
+        </div>
+      </header>
+      <div id="wrapper">
+        <!-- header  -->
+
+        <!-- left section -->
+        <div id="left-section">
+          <img
+            class="image"
+            src="{% static 'images/HEART.png' %}"
+            alt="하트"
+            id="img_heart1"
+          />
+          <img
+            class="image"
+            src="{% static 'images/HEART.png' %}"
+            alt="하트"
+            id="img_heart2"
+          />
+
+          <img
+            class="image"
+            src="{% static 'images/HEART.png' %}"
+            alt="하트"
+            id="img_heart3"
+          />
+          <img
+            class="image"
+            src="{% static 'images/hhand.png' %}"
+            alt="손"
+            id="img_hand"
+            style="display: block"
+          />
+        </div>
+
+        <!-- right section -->
+        <div id="right-section">
+          <div class="star">src="{% static 'images/Star.png' %}"</div>
+          <div class="title">
+            <p>HELLO</p>
+            <p>GREETING</p>
+          </div>
+          <div class="subtitle">
+            <p>어려운 인삿말 센스있게 전하세요!</p>
+          </div>
+          <button type="button" onclick="{% url 'Christmas'}" ;>
+            인사하러 가기
+          </button>
+        </div>
+        <!-- <footer>
+          <div>
+            <p>2022 단풍톤</p>
+            <p>헬로그리팅 팀:</p>
+            <p>© 2022 Hello Greeting</p>
+          </div>
+        </footer> -->
+      </div>
+
+    </div>
+  </body>
+</html>
