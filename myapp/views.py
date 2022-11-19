@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from .models import MyModel
 from .forms import ModelForm
 
+
+
 # 제일 먼저 보이는 첫페이지 보여주는 함수
 def Christmaspage(request):
-    if == # 친S구 선택     
     return render(request, "Christmaspage.html")
     
 def Newyearpage(request):
@@ -14,20 +15,14 @@ def Newyearpage(request):
 def Endyearpage(request):
     return render(request, 'Endyearpage.html')
 
-    # 친구 선택시 
-    '''if request.method=='POST':
-        if
-        else
-    # 웃어른 선택시
-    elif
-        if
-        else
-    # 은사님 선택시
-    elif
-        if
-        else
-    # 지인 선택시
-    else
-        if
-        else
-'''
+
+def gotothirdpage(request):
+    return render(request, )
+    
+def gotosecondpage(request):
+      
+    return render(request, "Christmas.html",)
+
+def thirdpage(request):
+    #작성한 이름이 데이터 베이스에 저장되는 기능
+    return render(request, 'thirdpage.html')
