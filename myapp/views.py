@@ -4,7 +4,7 @@ from .forms import ModelForm
 
 # 제일 먼저 보이는 첫페이지 보여주는 함수
 def home(request):
-    return render(request,"Christmaspage.html")
+    return render(request,"index.html")
 
 def Christmaspage(request):
     
@@ -17,7 +17,14 @@ def Newyearpage(request):
 def Endyearpage(request):
     return render(request, 'Endyearpage.html')
 
+def ResultEndyearpage(request):
+    return render(request, 'ResultYearEnd.html')
 
+def ResultChristmaspage(request):
+    return render(request, 'ResultXmas.html')
+
+def ResultNewyearpage(request):
+    return render(request, 'ResultNewyear.html')
 
 
 #def gotothirdpage(request):

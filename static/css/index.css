@@ -77,10 +77,13 @@ button:focus {
   margin-top: -20px;
   padding: 0px;
   margin: 0px;
-  background: linear-gradient(to top, #bc725b 30%, #ffffff 70%);
+  /*background: linear-gradient(to top, #bc725b 30%, #ffffff 70%);*/
   display: flex;
   justify-content: center;
   width: 100%;
+}
+html{
+  background: linear-gradient(to top, #bc725b 30%, #ffffff 70%);
 }
 #wrapper {
   display: flex;
@@ -318,7 +321,7 @@ button:hover {
 #letter {
   width: 921px;
   height: 900px;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   height: 100vh;
   padding: 10px;
   background: #ecd5a0;
@@ -366,7 +369,7 @@ button:hover {
 }
 .greeting_content {
   width: 835px;
-  height: 400px;
+  height: 200px;
   margin: 0 auto;
 
   padding: 20px;

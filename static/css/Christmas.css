@@ -4,9 +4,13 @@
     font-weight: 700;
     font-style: normal;
 }
+
 *{
     font-family:'KOFIHDrLEEJWTTF-B' ;
 }
+/*.logo{*/
+/*    padding: 40px 20px 20px 40px;*/
+/*}*/
 #treeImg{
     position: absolute;
     width: 35%;

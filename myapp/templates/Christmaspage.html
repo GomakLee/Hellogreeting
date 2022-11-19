@@ -14,7 +14,7 @@
     <img id="treeImg" src="{% static "images/tree.png" %}" alt="tree">
     <img id="cookieImg" src="{% static "images/cookie.png"  %}" alt="tree">
     <img id="socksImg" src="{% static "images/socks.png" %}" alt="tree">
-    <div id="logo">헬로그리팅(로고추가) </div>
+    <div id="logo">HelloGreeting </div>
     <div id="categoryDivStyle">
         <div id="categoryDiv">
             <button class="category" value="크리스마스" onclick="newPage1()">크리스마스</button>
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="messageBox">
-        <div id="contentTile"><span id="who">(누구)</span>에게 보낼 인삿말 추천입니다!</div>
+        <div id="contentTile"><span id="who">웃어른</span>에게 보낼 인삿말 추천입니다!</div>
         <div id="searchStyle">
             <div id="search">
             <form  action="" method="get" onsubmit="return false;">
@@ -48,12 +48,13 @@
             </div>
         </div>
         <div id="messageList">
-            <label><input type="radio" name="rd" value="rd1">1번</label>
-            <label><input type="radio" name="rd" value="rd2" checked>2번</label>
-            <label><input type="radio" name="rd" value="rd3">3번</label>
+            <label><input type="radio" name="rd" value="rd1">메리 크리스마스!! 새해를 준비하는 연말입니다. 여러분 모두가 한 해 마무리 잘 하시고, 행복한 크리스마스 보내길 바랍니다. 또한 여러분 모두의 가정에 행복이 가득하길 기원합니다.</label><br>
+            <label><input type="radio" name="rd" value="rd2" checked>매서운 추위가 연일 계속되고 있습니다. 새해 새로운 계획으로 좋은 출발하길 바라며, 따뜻한 크리스마스 보내세요. 추운 겨울 건강 조심하시기 바랍니다. 메리 크리스마스!!!
+</label><br>
+            <label><input type="radio" name="rd" value="rd3">여러분 모두가 행복하고 즐거운 성탄절, 즐거운 연말을 맞이하기를 바랍니다. 새해에는 더 건강하고 더 행복한 일들이 가득하기를 바라며. 여러분의 가정에 축복이 함께 하기를 기원합니다.</label><br>
         </div>
         <div id="nextBtnDiv">
-        <button id="nextBtn">작성하기</button>
+        <button id="nextBtn" onclick="newPage5()">작성하기</button>
         </div>
         </div>
     <script type="text/javascript" src="\static\js\script.js"></script>

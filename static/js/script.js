@@ -7,9 +7,19 @@ function newPage2()  {
 function newPage3()  {
     window.location.href = 'http://127.0.0.1:8000/Newyearpage/'
 }
-// function newPage4()  {  이 부분은 결과 창으로 넘어가게
-//     window.location.href = 'http://127.0.0.1:8000/Newyearpage/'
-// }
+function newPage4()  {
+    window.location.href = 'http://127.0.0.1:8000/Christmaspage/'
+}
+
+function newPage5()  {
+    window.location.href = 'http://127.0.0.1:8000/ResultXmas/'
+}
+function newPage6()  {
+    window.location.href = 'http://127.0.0.1:8000/ResultYearEnd/'
+}
+function newPage7()  {
+    window.location.href = 'http://127.0.0.1:8000/ResultNewyear/'
+}
 // 클릭시 페이지 이동
 let whoSend
 function bringClickValue(arg0){

@@ -13,12 +13,13 @@
   <body>
       <header>
         <div id="hello_greeting_logo">
-          {%url 'index' %}
+{#          {%url 'index' %}#}
           <h1 class="logo">
             <img src="{% static 'images/logo.png' %}" alt="logo" />
           </h1>
         </div>
       </header>
+
       <div id="wrapper">
 
     <div id="result_yearend_wrap">
@@ -49,15 +50,15 @@
           </div>
           <div class="greeting_content">
           <!-- 앞 커스텀 페이지에서 선택한 인사말을 보여준다. -->
-          <p id="greeting_content"></p>
-          <textarea
+          <p id="greeting_content">한 해를 마무리하는 마지막 날끝까지 행복한 일만 가득하길 바래요.새해에는 소망하는 일들모두 이루시고 늘 기쁜 일만 넘치길 바래요.</p>
+          {% comment %} <textarea
             id="greeting_input"
             type="text"
             placeholder="인삿말을 입력하세요!"
             cols="50"
             rows="50"
             width="100%"
-          ></textarea>
+          ></textarea> {% endcomment %}
           <div class="btns">
             <form>
               <input type="button" value="수정하기" class="edit_btn" />
@@ -92,7 +93,7 @@
         edit_button.value = "수정완료";
         txt.textContent;
       }
-      // -> 이렇게 하면 수정하기를 누르면 수정완료로 바뀌고, 수정완료를 누르면 수정하기로 바뀌지 않는다.
+      // → 이렇게 하면 수정하기를 누르면 수정완료로 바뀌고, 수정완료를 누르면 수정하기로 바뀌지 않는다.
     }
   </script>
 </html>

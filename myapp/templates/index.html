@@ -20,7 +20,7 @@
     <div id="body_wrap">
       <header>
         <div id="hello_greeting_logo">
-          {%url 'index' %}
+{#          {%url 'index' %}#}
           <h1 class="logo">
             <img src="{% static 'images/logo.png' %}" alt="logo" />
           </h1>
@@ -61,7 +61,7 @@
 
         <!-- right section -->
         <div id="right-section">
-          <div class="star">src="{% static 'images/Star.png' %}"</div>
+          <div class="star" src="{% static 'images/Star.png' %}"></div>
           <div class="title">
             <p>HELLO</p>
             <p>GREETING</p>
@@ -69,7 +69,7 @@
           <div class="subtitle">
             <p>어려운 인삿말 센스있게 전하세요!</p>
           </div>
-          <button type="button" onclick="{% url 'Christmas'}" ;>
+          <button type="button" onclick="newPage4()" ;>
             인사하러 가기
           </button>
         </div>
@@ -83,5 +83,6 @@
       </div>
 
     </div>
+  <script type="text/javascript" src="\static\js\script.js"></script>
   </body>
 </html>
