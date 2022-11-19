@@ -1,5 +1,11 @@
-function newPage()  {
-    window.location.href = 'http://127.0.0.1:5500/CategorySelect/Christmas.html'
+function newPage1()  {
+    window.location.href = 'http://127.0.0.1:8000/Christmaspage/'
+}
+function newPage2()  {
+    window.location.href = 'http://127.0.0.1:8000/Endyearpage/'
+}
+function newPage3()  {
+    window.location.href = 'http://127.0.0.1:8000/Newyearpage/'
 }
 // 클릭시 페이지 이동
 let whoSend
