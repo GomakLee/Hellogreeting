@@ -1,3 +1,5 @@
+import json
+
 greeting_list={
    'Christmas': { 
       'friend': { 
@@ -54,7 +56,3 @@ greeting_list={
    }
 }
 
-file_path='greeting_list.json'
-
-with open(file_path, 'w') as f:
-   json.dump(greeting_list,f)
