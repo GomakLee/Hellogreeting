@@ -9,9 +9,10 @@ def home(request):
 # def gotosecondpage(request,post_id):
 #     post_detail = get_object_or_404()
 #     return render(request, "secondpage_base.html",{'post_detail':post_detail})
-#
+
 def gotosecondpage(request):
     return render(request, "Christmas.html")
+
 
 
 
