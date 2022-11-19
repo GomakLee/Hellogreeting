@@ -1,7 +1,5 @@
 # 2022 멋사 단풍톤 12조 Hello Greeting팀
-
-![Desktop - 26](https://user-images.githubusercontent.com/71822139/202847768-21361c92-b303-43c7-87f8-b58a7c844a18.png)
-![Desktop - 28](https://user-images.githubusercontent.com/71822139/202847774-8f32e72b-8896-451e-9e1b-7aaec80c57ad.png)
+![Desktop - 27 복사본](https://user-images.githubusercontent.com/71822139/202848138-2dbc961b-5e11-4732-a2ef-69c01d14c4a5.png)
 헬로그리팅은 
 인삿말을 뜻하는 "헬로"와 안부의 인사를 뜻하는 "그리팅"의 합성어로 안부의 인사를 가치있게 전하자는 의도가 담겨져 있습니다.
 
