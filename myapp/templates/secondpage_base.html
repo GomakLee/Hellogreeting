@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카테고리별메세지페이지</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Christmas.css' %}">
 </head>
 <body>
     <img id="treeImg" src="{% static "images/tree.png" %}" alt="tree">
@@ -15,17 +15,17 @@
     <div id="logo">헬로그리팅(로고추가) </div>
     <div id="categoryDivStyle">
         <div id="categoryDiv">
-            <button class="category">크리스마스</button>
-            <button class="category">연말/연시</button>
-            <button class="category">새해</button>
+            <button class="category" value="크리스마스"onclick="newPage()">크리스마스</button>
+            <button class="category" value="연말/연시" >연말/연시</button>
+            <button class="category" value="새해" >새해</button>
         </div>
     </div>
     <div id="sendToDivStyle">
         <div id="sendToDiv">
-            <button class="sendTo">친구</button>
-            <button class="sendTo">웃어른</button>
-            <button class="sendTo">은사님</button>
-            <button class="sendTo">지인</button>
+            <button class="sendTo" value="친구">친구</button>
+            <button class="sendTo" value="웃어른">웃어른</button>
+            <button class="sendTo" value="은사님">은사님</button>
+            <button class="sendTo" value="지인" >지인</button>
         </div>
     </div>
     <div class="messageBox">
@@ -41,8 +41,8 @@
         </div>
         <div id="numberOfCharacterStyle">
             <div id="numberOfCharacter">
-                <buttonn class="numOfChar">10자 이내 </buttonn>
-                <buttonn class="numOfChar">50자 이내</buttonn>
+                <buttonn class="numOfChar" value="10자이내">10자 이내 </buttonn>
+                <buttonn class="numOfChar" value="50자이내">50자 이내</buttonn>
             </div>
         </div>
         <div id="messageList">
@@ -52,6 +52,6 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="static/js/script.js" ></script>
 </body>
 </html>
