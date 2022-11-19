@@ -1,0 +1,60 @@
+greeting_list={
+   'Christmas': { 
+      'friend': { 
+         '10' : '' ,
+         '50' : '' },
+
+      'teacher': { 
+         '10' : '' ,
+         '50' : '' },  
+         
+      'unfamiliar': { 
+         '10' : '' ,
+         '50' : '' }, 
+
+      'older': { 
+         '10' : '' ,
+         '50' : '' }, 
+   },
+      
+   'Endyear': { 
+      'friend': { 
+         '10' : '' ,
+         '50' : '' },
+
+      'teacher': { 
+         '10' : '' ,
+         '50' : '' },  
+         
+      'unfamiliar': { 
+         '10' : '' ,
+         '50' : '' }, 
+
+      'older': { 
+         '10' : '' ,
+         '50' : '' }, 
+   },
+
+   'Newyear': { 
+      'friend': { 
+         '10' : '' ,
+         '50' : '' },
+
+      'teacher': { 
+         '10' : '' ,
+         '50' : '' },  
+         
+      'unfamiliar': { 
+         '10' : '' ,
+         '50' : '' }, 
+
+      'older': { 
+         '10' : '' ,
+         '50' : '' }, 
+   }
+}
+
+file_path='greeting_list.json'
+
+with open(file_path, 'w') as f:
+   json.dump(greeting_list,f)

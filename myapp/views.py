@@ -20,8 +20,8 @@ def Endyearpage(request):
 
 
 
-def gotothirdpage(request):
-    return render(request, )
+#def gotothirdpage(request):
+#    return render(request, )
     
 
 def thirdpage(request):
