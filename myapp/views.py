@@ -23,7 +23,7 @@ def Endyearpage(request):
 #def gotothirdpage(request):
 #    return render(request, )
     
-
-def thirdpage(request):
-    #작성한 이름이 데이터 베이스에 저장되는 기능
-    return render(request, 'gotothirdpage.html')
+#
+# def thirdpage(request):
+#     #작성한 이름이 데이터 베이스에 저장되는 기능
+#     return render(request, 'gotothirdpage.html')

@@ -9,6 +9,6 @@ urlpatterns = [
     path('Endyearpage/', views.Endyearpage, name='Endyearpage'), #인사하러가기 버튼을 눌렀을 때 2페이지로 이동
     path('Newyearpage/', views.Newyearpage, name='Newyearpage'),
 
-    path('thirdpage/', views.gotothirdpage, name='gotothirdpage'),
+    # path('thirdpage/', views.gotothirdpage, name='gotothirdpage'),
 
 ]
