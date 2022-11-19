@@ -3,48 +3,31 @@ from .models import MyModel
 from .forms import ModelForm
 
 # 제일 먼저 보이는 첫페이지 보여주는 함수
-def home(request):
-    return render(request, "firstpage.htmsl")
-
-# 첫페이지의 <인사하러 가기> 버튼을 눌렀을 때 실행되는 함수
-# 버튼 클릭 -> 2페이지로 가기
-def secondpage(request,post_id):
- 
-    # 이미 저장되어 있는 인사말 랜덤으로 추천
-    # 사용자가 10자 내외의 
-    if request.method == "GET":
-        modelform = ModelForm()
-
-    # 크리스마스 , 친구인 경우
-        
-    # 크리스마스 , 웃어른인 경우
-
-    # 크리스마스 , 은사님인 경우
-
-    # 크리스마스 , 지인인 경우
-
-    # 연말연시 , 친구인 경우
-
-    # 연말연시 , 웃어른인 경우
-
-    # 연말연시 , 은사님인 경우
-
-    # 연말연시, 지인인 경우
-
-    # 새해 , 친구인 경우
-
-    # 새해 , 웃어른인 경우
-
-    # 새해 , 은사님인 경우
-
-    # 새해 , 지인인 경우
-
-
-
-    return render(request, "secondpage_base.html",{'post_detail':post_detail})
-
-def thirdpage(request):
-    #작성한 이름이 데이터 베이스에 저장되는 기능
-    filled_form = 
+def Christmaspage(request):
+    if == # 친S구 선택     
+    return render(request, "Christmaspage.html")
     
-    return render(request, 'thirdpage.html')
+def Newyearpage(request):
+    
+    return render(request, "Newyearpage.html")   
+
+def Endyearpage(request):
+    return render(request, 'Endyearpage.html')
+
+    # 친구 선택시 
+    '''if request.method=='POST':
+        if
+        else
+    # 웃어른 선택시
+    elif
+        if
+        else
+    # 은사님 선택시
+    elif
+        if
+        else
+    # 지인 선택시
+    else
+        if
+        else
+'''
