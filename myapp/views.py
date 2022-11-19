@@ -2,10 +2,12 @@ from django.shortcuts import render
 from .models import MyModel
 from .forms import ModelForm
 
-
-
 # 제일 먼저 보이는 첫페이지 보여주는 함수
+def home(request):
+    return render(request,"Christmaspage.html")
+
 def Christmaspage(request):
+    
     return render(request, "Christmaspage.html")
     
 def Newyearpage(request):
@@ -19,9 +21,6 @@ def Endyearpage(request):
 def gotothirdpage(request):
     return render(request, )
     
-def gotosecondpage(request):
-      
-    return render(request, "Christmas.html",)
 
 def thirdpage(request):
     #작성한 이름이 데이터 베이스에 저장되는 기능
