@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'KOFIHDrLEEJWTTF-B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/KOFIHDrLEEJWTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family:'KOFIHDrLEEJWTTF-B' ;
+}
+#snowImg{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left:3%;
+    z-index: -1;
+}
+#treeImg{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    left: 2%;
+    top: 30%;
+
+
+}
+
+#socksImg{
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    left: 4%;
+    top: 70%;
+}
+html{
+    height: 100%;
+    background:linear-gradient(#6E6F94FF,rgba(114, 128, 172, 0.762),#8288bfa2);
+
+}
+#categoryDivStyle{
+    width:50%;
+    margin: auto;
+}
+#categoryDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.category{
+    width:30%;
+    background-color: hwb(220 96% 2%);
+    border-radius: 100px;
+    border:0;
+    outline: 0;
+    color:#1c074b;
+    font-size: 30px;
+    padding:2%;
+    text-align: center;
+
+}
+#sendToDivStyle{
+    width:50%;
+    margin:auto;
+}
+#sendToDiv{
+    display: flex;
+    justify-content: center;
+}
+.sendTo{
+    margin-top:3%;
+    color:black;
+    font-size:18px;
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    width:15%;
+}
+.messageBox{
+    position:absolute;
+    left:35%;
+    top: 25%;
+    width:50%;
+    height: 70%;
+    background-color: hwb(261 9% 55% / 0.433);;
+
+}
+#contentTile{
+    text-align: center;
+    font-size:24px;
+    margin-top: 4%;
+    color:#fafafa;
+}
+#searchStyle{
+    display: flex;
+    justify-content: end;
+    margin-top:3%;
+    margin-right:3%;
+    height: 7%;
+
+}
+
+#search{
+    text-align: center;
+    width:30%;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border:0;
+}
+#searchInput{
+    background: rgba(255, 255, 255, 0.68);
+    border-radius: 100px;
+    border:0;
+    outline: 0;
+    font-size:15px;
+    width:60%;
+    margin-top: 3%;
+
+}
+#search_btn{
+    border-radius: 100px;
+    border:0;
+    outline: 0;
+
+}
+#numberOfCharacterStyle{
+    margin: auto;
+    width:40%;
+}
+#numberOfCharacter{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:3%;
+    margin-bottom: 5%;
+}
+.numOfChar{
+    color:#e7ecfd;
+    text-decoration: underline;
+    text-underline-position:under;
+
+}
+
+#messageList{
+    margin: auto;
+    width: 90%;
+    height: 58%;
+    text-align: center;
+    background-color: white;
+}
+
+.clicked {
+    border: thick solid #0b0135;
+  }
+
+
+.clicked1{
+    color:#f4f4ff;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+#nextBtnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top:2%;
+}
+
+#nextBtn{
+    text-align: center;
+    background-color: rgb(15, 11, 56);
+    color: white;
+    border-radius: 8px;
+    width:20%;
+    font-size: 22px;
+    border:0;
+    outline:0;
+}
