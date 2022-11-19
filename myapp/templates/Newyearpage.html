@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
@@ -6,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>크리스마스페이지</title>
-    <link rel="stylesheet" href="{% static 'css/Christmas.css' %}">
+    <title>새해페이지</title>
+    <link rel="stylesheet" href="{% static 'css/NewYear.css' %}">
 </head>
 <body>
-
-    <img id="treeImg" src="{% static "images/tree.png" %}" alt="tree">
-    <img id="cookieImg" src="{% static "images/cookie.png"  %}" alt="tree">
-    <img id="socksImg" src="{% static "images/socks.png" %}" alt="tree">
+    <img id="rabbitImg" src="{% static "images/rabbit.png" %}" alt="tree">
+    <img id="starImg1" src="{% static "images/star1.png"  %}" alt="tree">
+    <img id="starImg2" src="{% static "images/star2.png" %}" alt="tree">
+    <img id="textImg" src="{% static "images/text.png" %}" alt="tree">
     <div id="logo">헬로그리팅(로고추가) </div>
     <div id="categoryDivStyle">
         <div id="categoryDiv">
@@ -58,13 +57,3 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </body>
 </html>
-=======
-{% load static %}
-
-{% block content %}
-<a href="{% url 'secondpage_1'%}">크리스마스 선택시 크리스마스 배경의 이미지 페이지</a>
-<a href="{% url 'secondpage_2' %}">연말 연시 선택시 연말연시 배경의 이미지 페이지</a>
-<a href="{% url 'secondpage_3' %}">새해 선택시 새해 배경의 이미지 페이지</a>
-
-{% endblock %}
->>>>>>> Stashed changes
