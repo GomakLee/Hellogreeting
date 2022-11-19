@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Greeting</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div id="hello_greeting_logo">
+        {%url 'index' %}
+        <h1 class="logo">
+          <img src="{% static 'images/logo.png' %}" alt="logo" />
+        </h1>
+      </div>
+    </header>
+
+    <div id="result_wrap">
+      <div id="letter">
+        <div id="chrismas_letter_img">
+          <img
+            class="image"
+            src="{% static 'images/chrismas_letter_img.png' %}"
+            alt="크리스마스 사진"
+            id="c_l_img"
+          />
+        </div>
+        <div class="letter_content">
+          <!--To. -->
+          <div id="to">
+            <div class="to_text">
+              <p>To.</p>
+            </div>
+            <div class="line">
+              <input
+                type="text"
+                placeholder="누구에게 보낼건가요?"
+                size="30"
+                id="send_to"
+              />
+            </div>
+          </div>
+
+          <div class="greeting_content">
+            <!-- 앞 커스텀 페이지에서 선택한 인사말을 보여준다. -->
+            <p id="greeting_content"></p>
+            <textarea
+              id="greeting_input"
+              type="text"
+              placeholder="인삿말을 입력하세요!"
+              cols="50"
+              rows="50"
+              width="100%"
+            ></textarea>
+
+            <div class="btns">
+              <form>
+                <input type="button" value="수정하기" class="edit_btn" />
+              </form>
+              <form>
+                <input type="button" value="보내기" class="send_btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="image"
+        src="{% static 'images/candy-cane.png' %}"
+        alt="candy cane"
+        id="img_candy"
+      />
+      <img
+        class="image"
+        src="{% static 'images/Gift.png' %}"
+        alt="선물"
+        id="img_gift"
+      />
+      <img
+        class="image"
+        src="{% static 'images/Christmas-tree.png' %}"
+        alt="tree"
+        id="img_tree"
+      />
+      <img
+        class="image"
+        src="{% static 'images/sock.png' %}"
+        alt="sock"
+        id="img_sock"
+      />
+      <img
+        class="image"
+        src="{% static 'images/gingerbread-man.png' %}"
+        alt="gingerbread"
+        id="img_gingerbread"
+      />
+      <img
+        class="image"
+        src="{% static 'images/snowman.png' %}"
+        alt="snowman"
+        id="img_snowman"
+      />
+    </div>
+  </body>
+  <script>
+    const formEl = document.querySelector("form");
+    const edit_button = formEl.querySelector(".edit_btn");
+
+    var txt = document.querySelector("p #greeting_content");
+
+    edit_button.addEventListener("click", updateBtn);
+
+    function updateBtn() {
+      if (edit_button.value === "수정하기") {
+        edit_button.value = "수정완료";
+        txt.textContent;
+      } else {
+        edit_button.value = "수정완료";
+        txt.textContent;
+      }
+      // -> 이렇게 하면 수정하기를 누르면 수정완료로 바뀌고, 수정완료를 누르면 수정하기로 바뀌지 않는다.
+    }
+  </script>
+</html>
