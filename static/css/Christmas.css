@@ -30,10 +30,10 @@
     left: 4%;
     top: 70%;
 }
-body{
-    height: 100%;
-    background-color: #fbf8f6;
-}
+/*body{*/
+/*    height: 100%;*/
+/*    background-color: #fbf8f6;*/
+/*}*/
 #categoryDivStyle{
     width:50%;
     margin: auto;
@@ -154,3 +154,8 @@ body{
     text-underline-position:under;
 }
 
+html{
+    height: 100%;
+    background:linear-gradient(#fdfdfe, rgb(201, 228, 214), #77bc96);
+
+}
