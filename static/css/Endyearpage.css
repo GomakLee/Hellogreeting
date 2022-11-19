@@ -7,19 +7,20 @@
 *{
     font-family:'KOFIHDrLEEJWTTF-B' ;
 }
+#snowImg{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left:3%;
+    z-index: -1;
+}
 #treeImg{
     position: absolute;
-    width: 35%;
-    height: 85%;
-    left:-0.5%;
-    top: 15%;
-}
-#cookieImg{
-    position: absolute;
-    width: 23%;
-    height: 35%;
-    left: 12%;
-    top: 42%;
+    width: 30%;
+    height: 70%;
+    left: 2%;
+    top: 30%;
+
 
 }
 
@@ -30,9 +31,10 @@
     left: 4%;
     top: 70%;
 }
-body{
+html{
     height: 100%;
-    background-color: #fbf8f6;
+    background:linear-gradient(#6E6F94FF,rgba(114, 128, 172, 0.762),#8288bfa2);
+
 }
 #categoryDivStyle{
     width:50%;
@@ -44,11 +46,11 @@ body{
 }
 .category{
     width:30%;
-    background-color: #ECD5A0;
+    background-color: hwb(220 96% 2%);
     border-radius: 100px;
     border:0;
     outline: 0;
-    color:rgba(194, 123, 123, 1);
+    color:#1c074b;
     font-size: 30px;
     padding:2%;
     text-align: center;
@@ -77,13 +79,14 @@ body{
     top: 25%;
     width:50%;
     height: 70%;
-    background-color: #ECD5A0;;
+    background-color: hwb(261 9% 55% / 0.433);;
 
 }
 #contentTile{
     text-align: center;
     font-size:24px;
     margin-top: 4%;
+    color:#fafafa;
 }
 #searchStyle{
     display: flex;
@@ -129,7 +132,7 @@ body{
     margin-bottom: 5%;
 }
 .numOfChar{
-    color:rgba(120, 31, 3, 0.68);
+    color:#e7ecfd;
     text-decoration: underline;
     text-underline-position:under;
 
@@ -141,4 +144,15 @@ body{
     height: 65%;
     text-align: center;
     background-color: white;
+}
+
+.clicked {
+    border: thick solid #0b0135;
+  }
+
+
+.clicked1{
+    color:#f4f4ff;
+    text-decoration: underline;
+    text-underline-position:under;
 }

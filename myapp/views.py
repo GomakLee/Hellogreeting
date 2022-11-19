@@ -21,6 +21,8 @@ def gotosecondpage(request):
     return render(request, "Christmas.html")
 
 
+
+
 def gotothirdpage(request):
     return render(request, )
 =======
