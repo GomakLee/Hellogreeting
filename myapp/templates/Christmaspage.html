@@ -6,37 +6,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>카테고리별메세지페이지</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>크리스마스페이지</title>
+    <link rel="stylesheet" href="{% static 'css/Christmas.css' %}">
 </head>
 <body>
+
     <img id="treeImg" src="{% static "images/tree.png" %}" alt="tree">
-    <img id="cookieImg" src="{% static "images/cookie.png" %}" alt="tree">
+    <img id="cookieImg" src="{% static "images/cookie.png"  %}" alt="tree">
     <img id="socksImg" src="{% static "images/socks.png" %}" alt="tree">
     <div id="logo">헬로그리팅(로고추가) </div>
     <div id="categoryDivStyle">
         <div id="categoryDiv">
-            <a href="{% url 'Christmaspage' %}"><button class="category" value="크리스마스"onclick="newPage()">크리스마스</button></a>
-            <a href="{% url 'Endyearpage' %}"><button class="category" value="연말/연시" >연말/연시</button></a>
-            <a href="{% url 'Newyearpage' %}"></a><button class="category" value="새해" >새해</button></a>
+            <button class="category" value="크리스마스">크리스마스</button>
+            <button class="category" value="연말" >연말</button>
+            <button class="category" value="새해" >새해</button>
         </div>
     </div>
     <div id="sendToDivStyle">
         <div id="sendToDiv">
-            <button class="sendTo" value="친구">친구</button>
-            <button class="sendTo" value="웃어른">웃어른</button>
-            <button class="sendTo" value="은사님">은사님</button>
-            <button class="sendTo" value="지인" >지인</button>
-            <!-------------------->
-            <button class="sendTo" value="친구" onclick = "location.href='friend.html' "></button>
-            <button class="sendTo" value="웃어른" onclick = "location.href='older.html' "></button>
-            <button class="sendTo" value="은사님" onclick = "location.href='teacher.html' "></button>
-            <button class="sendTo" value="지인" onclick = "location.href='unfamiliar.html' "></button>
-
+            <button class="sendTo" value="친구" onclick="bringClickValue(this);">친구</button>
+            <button class="sendTo" value="웃어른" onclick="bringClickValue(this);">웃어른</button>
+            <button class="sendTo" value="은사님" onclick="bringClickValue(this);">은사님</button>
+            <button class="sendTo" value="지인" onclick="bringClickValue(this);" >지인</button>
         </div>
     </div>
     <div class="messageBox">
-        <div id="contentTile">(누구)에게 보낼 인삿말 추천입니다!</div>
+        <div id="contentTile"><span id="who">(누구)</span>에게 보낼 인삿말 추천입니다!</div>
         <div id="searchStyle">
             <div id="search">
             <form  action="" method="get" onsubmit="return false;">
@@ -59,7 +54,8 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="static/js/script.js" ></script>
+    <script type="text/javascript" src="\static\js\script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </body>
 </html>
 =======

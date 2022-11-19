@@ -17,5 +17,4 @@ class NameModel(models.Model):
     # 편지 쓰는 사람의 이름
     myname = models.CharField(blank = True, max_length=200)
 
-    randomtext = models.ForeignKey()
     mytext = models.TextField(null = True, max_length = 400)
