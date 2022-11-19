@@ -7,7 +7,7 @@ class MyModel(models.Model):
     long = models.TextField(null = True, max_length=50)
 
     # 10자 내외의 추천 인삿말
-    shortmessage = models.TextField(null = True, max_length=10) 
+    shortmessage = models.TextField(null = True, max_length=30) 
     # 50자 내외의 추천 인삿말
     longmessage = models.TextField(null = True, max_length=50)
 
